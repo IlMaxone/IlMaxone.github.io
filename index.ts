@@ -25,7 +25,8 @@ function aggiungiPiatto(this: any, e: Event){
 }
 
 function cancellaPiatto(){
-    localStorage.clear;
+    localStorage.removeItem('ordini');
+    listaOrdini.length = 0;
     popolaLista();
 }
 

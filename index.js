@@ -17,7 +17,8 @@ function aggiungiPiatto(e) {
     this.reset();
 }
 function cancellaPiatto() {
-    localStorage.clear;
+    localStorage.removeItem('ordini');
+    listaOrdini.length = 0;
     popolaLista();
 }
 function popolaLista() {
